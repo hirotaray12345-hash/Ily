@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>💖 Untuk Grace Jelita Silitonga 💖</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            font-family: 'Segoe UI', 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 20px;
+        }
+        
+        /* Jatuhan hati */
+        .heart {
+            position: fixed;
+            font-size: 20px;
+            pointer-events: none;
+            animation: fall linear forwards;
+            z-index: 100;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            z-index: 10;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 40px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,105,180,0.3);
+            transition: all 0.3s;
+        }
+        
+        .emoji {
+            font-size: 70px;
+            animation: bounce 0.5s ease infinite;
+            display: inline-block;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        h1 {
+            font-size: 1.8em;
+            color: #ff6b6b;
+            margin: 20px 0 10px;
+        }
+        
+        .name {
+            font-size: 1.8em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff6b6b, #ff8c8c, #ffb6c1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 10px 0;
+        }
+        
+        .question {
+            font-size: 1.3em;
+            color: #555;
+            margin: 25px 0;
+            line-height: 1.5;
+            padding: 15px;
+            background: #fff0f5;
+            border-radius: 30px;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .btn-yes {
+            background: linear-gradient(135deg, #ff6b6b, #ff8c8c);
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3em;
+            border-radius: 60px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+            transition: all 0.2s;
+            min-width: 120px;
+        }
+        
+        .btn-no {
+            background: linear-gradient(135deg, #aaa, #888);
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border-radius: 60px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+            min-width: 100px;
+        }
+        
+        .btn-yes:active {
+            transform: scale(0.96);
+        }
+        
+        .result {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 30px;
+            background: #fff0f5;
+            display: none;
+        }
+        
+        .result.show {
+            display: block;
+            animation: slideUp 0.5s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .result h2 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+        
+        .result p {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        
+        .heart-big {
+            font-size: 50px;
+            animation: heartbeat 0.8s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        .gif-placeholder {
+            font-size: 80px;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            color: #aaa;
+            font-size: 0.7em;
+        }
+        
+        @media (max-width: 480px) {
+            .card { padding: 30px 20px; }
+            h1 { font-size: 1.4em; }
+            .name { font-size: 1.4em; }
+            .question { font-size: 1.1em; }
+            .btn-yes { padding: 12px 30px; font-size: 1.1em; }
+            .btn-no { padding: 12px 25px; font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="emoji">💖🥺💖</div>
+            
+            <h1>HALO GRACE JELITA SILITONGA!</h1>
+            
+            <div class="name">✨ GRACE ✨</div>
+            
+            <div class="question">
+                💌 <strong>Aku mau nanya sesuatu...</strong> 💌<br><br>
+                Maukah kamu menjadi pacarku? 🥺
+            </div>
+            
+            <div class="buttons">
+                <button class="btn-yes" id="yesBtn" onclick="answerYes()">💖 YES 💖</button>
+                <button class="btn-no" id="noBtn" onclick="answerNo()">❌ NO</button>
+            </div>
+            
+            <div class="result" id="result">
+                <div class="heart-big">💖💖💖</div>
+                <h2>💕 YEAYYY! 💕</h2>
+                <p><strong>Makasih sayang! 💖</strong></p>
+                <p>Aku janji bakal jadi yang terbaik buat kamu! 🥰</p>
+                <p>💑 <strong>I LOVE YOU!</strong> 💑</p>
+                <div class="gif-placeholder">🎉💖🎉💖🎉</div>
+            </div>
+            
+            <div class="footer">
+                ❤️ Tekan YES atau NO ❤️
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let noClickCount = 0;
+        let noButton = document.getElementById('noBtn');
+        let yesButton = document.getElementById('yesBtn');
+        let resultDiv = document.getElementById('result');
+        
+        // Ukuran awal YES button
+        let yesSize = 1;
+        
+        function answerYes() {
+            // Sembunyikan tombol YES NO
+            document.querySelector('.buttons').style.display = 'none';
+            document.querySelector('.question').style.display = 'none';
+            
+            // Tampilkan hasil
+            resultDiv.classList.add('show');
+            
+            // Buat confetti
+            createConfetti(150);
+            
+            // Buat hati jatuh
+            startHearts();
+            
+            // Getar HP
+            if (navigator.vibrate) {
+                navigator.vibrate([200, 100, 200, 100, 300]);
+            }
+            
+            // Alert ucapan
+            setTimeout(() => {
+                alert('💖 MAKASIH GRACE! 💖\n\nAku sayang kamu! 🥰');
+            }, 500);
+        }
+        
+        function answerNo() {
+            noClickCount++;
+            
+            // YES button membesar setiap kali NO ditekan
+            yesSize += 0.25;
+            yesButton.style.transform = `scale(${yesSize})`;
+            yesButton.style.padding = `${15 * yesSize}px ${40 * yesSize}px`;
+            yesButton.style.fontSize = `${1.3 * yesSize}em`;
+            
+            // NO button mengecil
+            let noSize = Math.max(0.6, 1 - (noClickCount * 0.1));
+            noButton.style.transform = `scale(${noSize})`;
+            noButton.style.opacity = noSize;
+            
+            // Geser NO button sedikit (makin susah ditekan)
+            let randomX = (Math.random() - 0.5) * 20;
+            let randomY = (Math.random() - 0.5) * 20;
+            noButton.style.transform += ` translate(${randomX}px, ${randomY}px)`;
+            
+            // Buat hati kecil sebagai efek
+            createMiniHeart();
+            
+            // Pesan lucu setiap tekan NO
+            const messages = [
+                "🥺 Coba lagi dong...",
+                "💖 Pencet YES aja sayang~",
+                "😢 Aku sedih nih...",
+                "💕 YES lebih besar sekarang!",
+                "🥰 Kamu pasti mau YES kan?",
+                "💗 Tombol NO makin kecil loh!",
+                "😘 Pencet YES dong!"
+            ];
+            
+            // Tampilkan pesan floating
+            showFloatingMessage(messages[Math.min(noClickCount - 1, messages.length - 1)]);
+            
+            // Kalo sudah terlalu banyak tekan NO
+            if (noClickCount >= 8) {
+                // Paksa YES dengan ukuran super besar
+                yesButton.style.transform = `scale(3)`;
+                setTimeout(() => {
+                    alert("💖 Udah deh, kamu harus YES! 💖\n\nGak ada pilihan lain! 😘");
+                }, 200);
+            }
+        }
+        
+        function showFloatingMessage(msg) {
+            const div = document.createElement('div');
+            div.textContent = msg;
+            div.style.position = 'fixed';
+            div.style.left = '50%';
+            div.style.top = '40%';
+            div.style.transform = 'translateX(-50%)';
+            div.style.backgroundColor = '#ffb6c1';
+            div.style.color = '#ff6b6b';
+            div.style.padding = '12px 25px';
+            div.style.borderRadius = '50px';
+            div.style.fontWeight = 'bold';
+            div.style.fontSize = '1.1em';
+            div.style.zIndex = '1000';
+            div.style.boxShadow = '0 5px 20px rgba(0,0,0,0.2)';
+            div.style.animation = 'floatMessage 2s ease-out forwards';
+            document.body.appendChild(div);
+            
+            setTimeout(() => div.remove(), 2000);
+        }
+        
+        // Animasi pesan floating
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes floatMessage {
+                0% {
+                    opacity: 1;
+                    transform: translateX(-50%) translateY(0);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateX(-50%) translateY(-80px);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        function createMiniHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '💖';
+            heart.style.position = 'fixed';
+            heart.style.left = (Math.random() * window.innerWidth) + 'px';
+            heart.style.bottom = '20px';
+            heart.style.fontSize = (20 + Math.random() * 30) + 'px';
+            heart.style.zIndex = '999';
+            heart.style.pointerEvents = 'none';
+            heart.style.animation = 'flyUp 1s ease-out forwards';
+            document.body.appendChild(heart);
+            
+            setTimeout(() => heart.remove(), 1000);
+        }
+        
+        // Animasi hati terbang
+        const flyStyle = document.createElement('style');
+        flyStyle.textContent = `
+            @keyframes flyUp {
+                0% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(-100px);
+                }
+            }
+        `;
+        document.head.appendChild(flyStyle);
+        
+        function createConfetti(count) {
+            for(let i = 0; i < count; i++) {
+                const confetti = document.createElement('div');
+                const icons = ['💖', '💕', '💗', '💓', '💝', '💘', '🎉', '✨', '💑', '🥰'];
+                confetti.innerHTML = icons[Math.floor(Math.random() * icons.length)];
+                confetti.style.position = 'fixed';
+                confetti.style.left = Math.random() * window.innerWidth + 'px';
+                confetti.style.top = '-20px';
+                confetti.style.fontSize = (15 + Math.random() * 25) + 'px';
+                confetti.style.zIndex = '9999';
+                confetti.style.pointerEvents = 'none';
+                confetti.style.animation = `fallConfetti ${1 + Math.random() * 2}s linear forwards`;
+                document.body.appendChild(confetti);
+                
+                setTimeout(() => confetti.remove(), 3000);
+            }
+        }
+        
+        // Animasi confetti
+        const confettiStyle = document.createElement('style');
+        confettiStyle.textContent = `
+            @keyframes fallConfetti {
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(confettiStyle);
+        
+        let heartInterval;
+        
+        function startHearts() {
+            if (heartInterval) clearInterval(heartInterval);
+            heartInterval = setInterval(() => {
+                createFallingHeart();
+            }, 200);
+            
+            setTimeout(() => {
+                if (heartInterval) clearInterval(heartInterval);
+            }, 10000);
+        }
+        
+        function createFallingHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            const hearts = ['💖', '💕', '💗', '💓', '💝', '💘', '❤️', '🧡', '💛', '💚', '💙', '💜'];
+            heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * window.innerWidth + 'px';
+            heart.style.fontSize = (15 + Math.random() * 30) + 'px';
+            heart.style.animationDuration = 2 + Math.random() * 3 + 's';
+            document.body.appendChild(heart);
+            
+            setTimeout(() => heart.remove(), 5000);
+        }
+        
+        // Hati jatuh otomatis saat loading
+        setInterval(() => {
+            createFallingHeart();
+        }, 800);
+        
+        // Pesan awal
+        setTimeout(() => {
+            showFloatingMessage("🥺 Aku tunggu jawabannya ya... 💖");
+        }, 1000);
+    </script>
+</body>
+  </html>
